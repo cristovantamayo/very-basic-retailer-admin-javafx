@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<Pane fx:id="groundPane" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cristovantamayo.veryBasicRetailerAdmin.gui.MainViewController">
+   <children>
+      <VBox fx:id="vBox" minHeight="460.0" minWidth="640.0">
+         <children>
+            <MenuBar id="menuBar" fx:id="menu">
+              <menus>
+                  <Menu mnemonicParsing="false" text="Serviços">
+                    <items>
+                      <MenuItem fx:id="menuItemNovaOrdem" mnemonicParsing="false" onAction="#onMenuItemNovaOrdem" text="Nova Ordem" />
+                        <MenuItem fx:id="menuItemListarOrdens" mnemonicParsing="false" onAction="#onMenuItemAbout" text="Listar todos as Ordens" />
+                        <MenuItem mnemonicParsing="false" text="Serviços" />
+                    </items>
+                  </Menu>
+                <Menu mnemonicParsing="false" text="Vendas">
+                  <items>
+                    <MenuItem fx:id="menuItemSeller" mnemonicParsing="false" onAction="#onMenuItemSeller" text="Novo Orçamento" />
+                        <MenuItem fx:id="menuItemDepartment" mnemonicParsing="false" onAction="#onMenuItemDepartment" text="Listar Orçamentos" />
+                        <MenuItem mnemonicParsing="false" text="Vendas" />
+                        <MenuItem mnemonicParsing="false" text="Produtos" />
+                  </items>
+                </Menu>
+                  <Menu mnemonicParsing="false" text="Clientes">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Encontrar" />
+                      <MenuItem mnemonicParsing="false" text="Listar Clientes" />
+                        <MenuItem mnemonicParsing="false" text="Novo" />
+                    </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Caixa">
+                    <items>
+                      <MenuItem mnemonicParsing="false" text="Caixa Diário" />
+                        <MenuItem mnemonicParsing="false" text="Caixa Mensal" />
+                        <MenuItem mnemonicParsing="false" text="Ajustes" />
+                    </items>
+                  </Menu>
+                <Menu mnemonicParsing="false" text="Sobre">
+                  <items>
+                    <MenuItem fx:id="MenuItemAboud" mnemonicParsing="false" onAction="#onMenuItemAbout" text="Sobre" />
+                  </items>
+                </Menu>
+              </menus>
+               <effect>
+                  <Blend />
+               </effect>
+            </MenuBar>
+            <TabPane fx:id="tabPane" prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" />
+         </children>
+      </VBox>
+   </children>
+</Pane>

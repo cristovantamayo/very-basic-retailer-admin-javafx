@@ -1,0 +1,103 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.cristovantamayo</groupId>
+	<artifactId>veryBasicRetailerAdmin</artifactId>
+	<version>1.0-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<name>veryBasicRetailerAdmin</name>
+	<url>http://maven.apache.org</url>
+
+	<developers>
+		<developer>
+			<id>ct</id>
+			<name>Cristovan Tamayo</name>
+			<email>cristovan.tamayo@gmail.com</email>
+		</developer>
+	</developers>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<repositories>
+		<repository>
+			<id>jasper-third-party-ce-artifacts</id>
+			<url>http://jaspersoft.jfrog.io/jaspersoft/third-party-ce-artifacts/</url>
+		</repository>
+		<repository>
+			<id>jasper-jr-ce-releases</id>
+			<url>http://jaspersoft.jfrog.io/jaspersoft/jr-ce-releases</url>
+		</repository>
+	</repositories>
+
+	<dependencies>
+
+		<dependency>
+			<groupId>net.sf.jasperreports</groupId>
+			<artifactId>jasperreports</artifactId>
+			<version>6.5.1</version>
+		</dependency>
+		<dependency>
+			<groupId>net.sf.jasperreports</groupId>
+			<artifactId>jasperreports-fonts</artifactId>
+			<version>6.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>net.sf.jasperreports</groupId>
+			<artifactId>jasperreports-functions</artifactId>
+			<version>6.5.1</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.openjfx/javafx <dependency> 
+			<groupId>org.openjfx</groupId> <artifactId>javafx</artifactId> <version>12</version> 
+			<type>pom</type> </dependency> -->
+
+		<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>8.0.15</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/ch.vorburger.mariaDB4j/mariaDB4j -->
+		<dependency>
+			<groupId>ch.vorburger.mariaDB4j</groupId>
+			<artifactId>mariaDB4j</artifactId>
+			<version>2.4.0</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/commons-dbutils/commons-dbutils -->
+		<dependency>
+			<groupId>commons-dbutils</groupId>
+			<artifactId>commons-dbutils</artifactId>
+			<version>1.6</version>
+		</dependency>
+
+
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>3.8.1</version>
+			<scope>test</scope>
+		</dependency>
+
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>com.zenjava</groupId>
+				<artifactId>javafx-maven-plugin</artifactId>
+				<version>8.8.3</version>
+				<configuration>
+					<mainClass>your.main.class.which.extends.javafx.Application</mainClass>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
