@@ -15,7 +15,6 @@ import com.cristovantamayo.veryBasicRetailerAdmin.model.dao.impl.UsuarioDaoJDBC;
 import com.cristovantamayo.veryBasicRetailerAdmin.model.entities.Caixa;
 import com.cristovantamayo.veryBasicRetailerAdmin.model.entities.Campanha;
 import com.cristovantamayo.veryBasicRetailerAdmin.model.entities.Categoria;
-import com.cristovantamayo.veryBasicRetailerAdmin.model.entities.Cliente;
 import com.cristovantamayo.veryBasicRetailerAdmin.model.entities.Orcamento;
 import com.cristovantamayo.veryBasicRetailerAdmin.model.entities.Ordem;
 import com.cristovantamayo.veryBasicRetailerAdmin.model.entities.Pagamento;
@@ -24,8 +23,8 @@ import com.cristovantamayo.veryBasicRetailerAdmin.model.entities.Produto;
 import com.cristovantamayo.veryBasicRetailerAdmin.model.entities.Usuario;
 
 public class DaoFactory {
-	public static Dao<Cliente> createClienteDao() {
-		return (Dao<Cliente>) new ClienteDaoJDBC(DB.getConnection());
+	public static ClienteDao createClienteDao() {
+		return (ClienteDao) new ClienteDaoJDBC(DB.getConnection());
 	}
 		
 	public static Dao<Orcamento> createOrcamentoDao() {

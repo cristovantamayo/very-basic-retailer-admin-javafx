@@ -27,7 +27,7 @@ public class Mysql implements Serializable {
 			flag = true;
 		}
 		
-		System.out.println("flag: " +  flag);
+		System.out.println("Mysql - flag: " +  flag);
 		
 		try {
 			if (flag) {

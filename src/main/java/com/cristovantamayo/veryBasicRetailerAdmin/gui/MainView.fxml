@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 
-<Pane fx:id="groundPane" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cristovantamayo.veryBasicRetailerAdmin.gui.MainViewController">
+<Pane fx:id="groundPane" minHeight="600.0" minWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cristovantamayo.veryBasicRetailerAdmin.gui.MainViewController">
    <children>
       <VBox fx:id="vBox" minHeight="460.0" minWidth="640.0">
          <children>
@@ -16,36 +16,35 @@
               <menus>
                   <Menu mnemonicParsing="false" text="Serviços">
                     <items>
-                      <MenuItem fx:id="menuItemNovaOrdem" mnemonicParsing="false" onAction="#onMenuItemNovaOrdem" text="Nova Ordem" />
-                        <MenuItem fx:id="menuItemListarOrdens" mnemonicParsing="false" onAction="#onMenuItemAbout" text="Listar todos as Ordens" />
-                        <MenuItem mnemonicParsing="false" text="Serviços" />
+                      <MenuItem fx:id="menuItemNovaOS" mnemonicParsing="false" onAction="#onMenuItemNovaOS" text="Nova O.S." />
+                        <MenuItem fx:id="menuItemListarOS" mnemonicParsing="false" onAction="#onMenuItemListarOS" text="Listar O.S." />
+                        <MenuItem fx:id="menuItemServicos" mnemonicParsing="false" onAction="#onMenuItemServicos" text="Serviços" />
                     </items>
                   </Menu>
                 <Menu mnemonicParsing="false" text="Vendas">
                   <items>
-                    <MenuItem fx:id="menuItemSeller" mnemonicParsing="false" onAction="#onMenuItemSeller" text="Novo Orçamento" />
-                        <MenuItem fx:id="menuItemDepartment" mnemonicParsing="false" onAction="#onMenuItemDepartment" text="Listar Orçamentos" />
-                        <MenuItem mnemonicParsing="false" text="Vendas" />
-                        <MenuItem mnemonicParsing="false" text="Produtos" />
+                    <MenuItem fx:id="menuItemNOrc" mnemonicParsing="false" onAction="#onMenuItemNOrc" text="Novo Orçamento" />
+                        <MenuItem fx:id="menuItemOrcs" mnemonicParsing="false" onAction="#onMenuItemOrcs" text="Listar Orçamentos" />
+                        <MenuItem fx:id="menuItemVendas" mnemonicParsing="false" onAction="#onMenuItemVendas" text="Vendas" />
+                        <MenuItem fx:id="menuItemProdutos" mnemonicParsing="false" onAction="#onMenuItemProdutos" text="Produtos" />
                   </items>
                 </Menu>
                   <Menu mnemonicParsing="false" text="Clientes">
                     <items>
-                        <MenuItem mnemonicParsing="false" text="Encontrar" />
-                      <MenuItem mnemonicParsing="false" text="Listar Clientes" />
-                        <MenuItem mnemonicParsing="false" text="Novo" />
+                      <MenuItem fx:id="menuItemListCli" mnemonicParsing="false" onAction="#onMenuItemListCli" text="Listar Clientes" />
+                        <MenuItem fx:id="menuItemNCli" mnemonicParsing="false" onAction="#onMenuItemNCli" text="Novo Cliente" />
                     </items>
                   </Menu>
                   <Menu mnemonicParsing="false" text="Caixa">
                     <items>
-                      <MenuItem mnemonicParsing="false" text="Caixa Diário" />
-                        <MenuItem mnemonicParsing="false" text="Caixa Mensal" />
-                        <MenuItem mnemonicParsing="false" text="Ajustes" />
+                      <MenuItem fx:id="menuItemCxDiario" mnemonicParsing="false" onAction="#onMenuItemCxDiario" text="Caixa Diário" />
+                        <MenuItem fx:id="menuItemCxMensal" mnemonicParsing="false" onAction="#onMenuItemCxMensal" text="Caixa Mensal" />
+                        <MenuItem fx:id="menuItemAjustes" mnemonicParsing="false" onAction="#onMenuItemAjustes" text="Ajustes" />
                     </items>
                   </Menu>
                 <Menu mnemonicParsing="false" text="Sobre">
                   <items>
-                    <MenuItem fx:id="MenuItemAboud" mnemonicParsing="false" onAction="#onMenuItemAbout" text="Sobre" />
+                    <MenuItem fx:id="menuItemAboud" mnemonicParsing="false" onAction="#onMenuItemAbout" text="Sobre" />
                   </items>
                 </Menu>
               </menus>

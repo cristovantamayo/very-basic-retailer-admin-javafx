@@ -911,3 +911,116 @@
 2019-10-10 14:57:48 12456 [Note] InnoDB: Loading buffer pool(s) from D:\Projetos\veryBasicBusinesaAdmin\veryBasicRetailerAdmin\src\db\ib_buffer_pool
 2019-10-10 14:57:48 12456 [Note] InnoDB: Buffer pool(s) load completed at 191010 14:57:48
 2019-10-10 14:57:48 9900 [Note] Plugin 'FEEDBACK' is disabled.
+2019-10-11  9:16:05 17272 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2019-10-11  9:16:05 17272 [Note] InnoDB: Uses event mutexes
+2019-10-11  9:16:05 17272 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2019-10-11  9:16:05 17272 [Note] InnoDB: Number of pools: 1
+2019-10-11  9:16:05 17272 [Note] InnoDB: Using SSE2 crc32 instructions
+2019-10-11  9:16:05 17272 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2019-10-11  9:16:05 17272 [Note] InnoDB: Completed initialization of buffer pool
+2019-10-11  9:16:05 17272 [Note] InnoDB: Highest supported file format is Barracuda.
+2019-10-11  9:16:05 17272 [Note] InnoDB: Starting crash recovery from checkpoint LSN=1621556
+2019-10-11  9:16:06 17272 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2019-10-11  9:16:06 17272 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2019-10-11  9:16:06 17272 [Note] InnoDB: Creating shared tablespace for temporary tables
+2019-10-11  9:16:06 17272 [Note] InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2019-10-11  9:16:06 17272 [Note] InnoDB: File '.\ibtmp1' size is now 12 MB.
+2019-10-11  9:16:06 17272 [Note] InnoDB: Waiting for purge to start
+2019-10-11  9:16:06 17272 [Note] InnoDB: 5.7.20 started; log sequence number 1621565
+2019-10-11  9:16:06 2804 [Note] InnoDB: Loading buffer pool(s) from D:\Projetos\veryBasicBusinesaAdmin\veryBasicRetailerAdmin\src\db\ib_buffer_pool
+2019-10-11  9:16:06 2804 [Note] InnoDB: Buffer pool(s) load completed at 191011  9:16:06
+2019-10-11  9:16:06 17272 [Note] Plugin 'FEEDBACK' is disabled.
+2019-10-12 10:48:18 19068 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2019-10-12 10:48:18 19068 [Note] InnoDB: Uses event mutexes
+2019-10-12 10:48:18 19068 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2019-10-12 10:48:18 19068 [Note] InnoDB: Number of pools: 1
+2019-10-12 10:48:18 19068 [Note] InnoDB: Using SSE2 crc32 instructions
+2019-10-12 10:48:18 19068 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2019-10-12 10:48:19 19068 [Note] InnoDB: Completed initialization of buffer pool
+2019-10-12 10:48:19 19068 [Note] InnoDB: Highest supported file format is Barracuda.
+2019-10-12 10:48:19 19068 [Note] InnoDB: Starting crash recovery from checkpoint LSN=1621612
+2019-10-12 10:48:20 19068 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2019-10-12 10:48:20 19068 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2019-10-12 10:48:20 19068 [Note] InnoDB: Creating shared tablespace for temporary tables
+2019-10-12 10:48:20 19068 [Note] InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2019-10-12 10:48:20 19068 [Note] InnoDB: File '.\ibtmp1' size is now 12 MB.
+2019-10-12 10:48:20 19068 [Note] InnoDB: Waiting for purge to start
+2019-10-12 10:48:20 19068 [Note] InnoDB: Waiting for purge to start
+2019-10-12 10:48:20 19068 [Note] InnoDB: Waiting for purge to start
+2019-10-12 10:48:20 19068 [Note] InnoDB: 5.7.20 started; log sequence number 1621621
+2019-10-12 10:48:20 10116 [Note] InnoDB: Loading buffer pool(s) from D:\Projetos\veryBasicBusinesaAdmin\veryBasicRetailerAdmin\src\db\ib_buffer_pool
+2019-10-12 10:48:20 10116 [Note] InnoDB: Buffer pool(s) load completed at 191012 10:48:20
+2019-10-12 10:48:20 19068 [Note] Plugin 'FEEDBACK' is disabled.
+2019-10-12 11:11:19 16136 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2019-10-12 11:11:19 16136 [Note] InnoDB: Uses event mutexes
+2019-10-12 11:11:19 16136 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2019-10-12 11:11:19 16136 [Note] InnoDB: Number of pools: 1
+2019-10-12 11:11:19 16136 [Note] InnoDB: Using SSE2 crc32 instructions
+2019-10-12 11:11:19 16136 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2019-10-12 11:11:19 16136 [Note] InnoDB: Completed initialization of buffer pool
+2019-10-12 11:11:19 16136 [Note] InnoDB: Highest supported file format is Barracuda.
+2019-10-12 11:11:19 16136 [Note] InnoDB: Starting crash recovery from checkpoint LSN=1621668
+2019-10-12 11:11:21 16136 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2019-10-12 11:11:21 16136 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2019-10-12 11:11:21 16136 [Note] InnoDB: Creating shared tablespace for temporary tables
+2019-10-12 11:11:21 16136 [Note] InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2019-10-12 11:11:21 16136 [Note] InnoDB: File '.\ibtmp1' size is now 12 MB.
+2019-10-12 11:11:21 16136 [Note] InnoDB: 5.7.20 started; log sequence number 1621677
+2019-10-12 11:11:21 17368 [Note] InnoDB: Loading buffer pool(s) from D:\Projetos\veryBasicBusinesaAdmin\veryBasicRetailerAdmin\src\db\ib_buffer_pool
+2019-10-12 11:11:21 16136 [Note] Plugin 'FEEDBACK' is disabled.
+2019-10-12 11:11:21 17368 [Note] InnoDB: Buffer pool(s) load completed at 191012 11:11:21
+2019-10-14 15:08:37 3768 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2019-10-14 15:08:37 3768 [Note] InnoDB: Uses event mutexes
+2019-10-14 15:08:37 3768 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2019-10-14 15:08:37 3768 [Note] InnoDB: Number of pools: 1
+2019-10-14 15:08:37 3768 [Note] InnoDB: Using SSE2 crc32 instructions
+2019-10-14 15:08:37 3768 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2019-10-14 15:08:37 3768 [Note] InnoDB: Completed initialization of buffer pool
+2019-10-14 15:08:37 3768 [Note] InnoDB: Highest supported file format is Barracuda.
+2019-10-14 15:08:37 3768 [Note] InnoDB: Starting crash recovery from checkpoint LSN=1621724
+2019-10-14 15:08:37 3768 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2019-10-14 15:08:37 3768 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2019-10-14 15:08:37 3768 [Note] InnoDB: Creating shared tablespace for temporary tables
+2019-10-14 15:08:37 3768 [Note] InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2019-10-14 15:08:37 3768 [Note] InnoDB: File '.\ibtmp1' size is now 12 MB.
+2019-10-14 15:08:37 3768 [Note] InnoDB: 5.7.20 started; log sequence number 1621733
+2019-10-14 15:08:37 8180 [Note] InnoDB: Loading buffer pool(s) from D:\Projetos\veryBasicBusinesaAdmin\veryBasicRetailerAdmin\src\db\ib_buffer_pool
+2019-10-14 15:08:37 3768 [Note] Plugin 'FEEDBACK' is disabled.
+2019-10-14 15:08:37 8180 [Note] InnoDB: Buffer pool(s) load completed at 191014 15:08:37
+2019-10-15 10:04:16 7512 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2019-10-15 10:04:16 7512 [Note] InnoDB: Uses event mutexes
+2019-10-15 10:04:16 7512 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2019-10-15 10:04:16 7512 [Note] InnoDB: Number of pools: 1
+2019-10-15 10:04:16 7512 [Note] InnoDB: Using SSE2 crc32 instructions
+2019-10-15 10:04:16 7512 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2019-10-15 10:04:16 7512 [Note] InnoDB: Completed initialization of buffer pool
+2019-10-15 10:04:16 7512 [Note] InnoDB: Highest supported file format is Barracuda.
+2019-10-15 10:04:16 7512 [Note] InnoDB: Starting crash recovery from checkpoint LSN=1621771
+2019-10-15 10:04:17 7512 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2019-10-15 10:04:17 7512 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2019-10-15 10:04:17 7512 [Note] InnoDB: Creating shared tablespace for temporary tables
+2019-10-15 10:04:17 7512 [Note] InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2019-10-15 10:04:17 7512 [Note] InnoDB: File '.\ibtmp1' size is now 12 MB.
+2019-10-15 10:04:17 7512 [Note] InnoDB: 5.7.20 started; log sequence number 1621780
+2019-10-15 10:04:17 17416 [Note] InnoDB: Loading buffer pool(s) from D:\Projetos\veryBasicBusinesaAdmin\veryBasicRetailerAdmin\src\db\ib_buffer_pool
+2019-10-15 10:04:17 17416 [Note] InnoDB: Buffer pool(s) load completed at 191015 10:04:17
+2019-10-15 10:04:17 7512 [Note] Plugin 'FEEDBACK' is disabled.
+2019-10-16  9:21:45 3728 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2019-10-16  9:21:45 3728 [Note] InnoDB: Uses event mutexes
+2019-10-16  9:21:45 3728 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2019-10-16  9:21:45 3728 [Note] InnoDB: Number of pools: 1
+2019-10-16  9:21:45 3728 [Note] InnoDB: Using SSE2 crc32 instructions
+2019-10-16  9:21:45 3728 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2019-10-16  9:21:45 3728 [Note] InnoDB: Completed initialization of buffer pool
+2019-10-16  9:21:45 3728 [Note] InnoDB: Highest supported file format is Barracuda.
+2019-10-16  9:21:46 3728 [Note] InnoDB: Starting crash recovery from checkpoint LSN=1621818
+2019-10-16  9:21:47 3728 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2019-10-16  9:21:47 3728 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2019-10-16  9:21:47 3728 [Note] InnoDB: Creating shared tablespace for temporary tables
+2019-10-16  9:21:47 3728 [Note] InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2019-10-16  9:21:47 3728 [Note] InnoDB: File '.\ibtmp1' size is now 12 MB.
+2019-10-16  9:21:47 3728 [Note] InnoDB: Waiting for purge to start
+2019-10-16  9:21:47 3728 [Note] InnoDB: 5.7.20 started; log sequence number 1621827
+2019-10-16  9:21:47 15132 [Note] InnoDB: Loading buffer pool(s) from D:\Projetos\veryBasicBusinesaAdmin\veryBasicRetailerAdmin\src\db\ib_buffer_pool
+2019-10-16  9:21:47 15132 [Note] InnoDB: Buffer pool(s) load completed at 191016  9:21:47
+2019-10-16  9:21:47 3728 [Note] Plugin 'FEEDBACK' is disabled.

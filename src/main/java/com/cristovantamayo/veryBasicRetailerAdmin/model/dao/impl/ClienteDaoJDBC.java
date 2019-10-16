@@ -9,10 +9,10 @@ import java.util.List;
 
 import com.cristovantamayo.veryBasicRetailerAdmin.db.DB;
 import com.cristovantamayo.veryBasicRetailerAdmin.db.DbException;
-import com.cristovantamayo.veryBasicRetailerAdmin.model.dao.Dao;
+import com.cristovantamayo.veryBasicRetailerAdmin.model.dao.ClienteDao;
 import com.cristovantamayo.veryBasicRetailerAdmin.model.entities.Cliente;
 
-public class ClienteDaoJDBC implements Dao<Cliente> {
+public class ClienteDaoJDBC implements ClienteDao {
 	
 	private Connection conn;
 	
@@ -24,20 +24,19 @@ public class ClienteDaoJDBC implements Dao<Cliente> {
 		Cliente cli = new Cliente();
 		cli.setId(rs.getInt("id"));
 		cli.setNome(rs.getString("nome"));
-		cli.setNome(rs.getString("rg"));
-		cli.setNome(rs.getString("cpf"));
-		cli.setNome(rs.getString("endereco"));
-		cli.setNome(rs.getString("numero"));
-		cli.setNome(rs.getString("complemento"));
-		cli.setNome(rs.getString("bairro"));
-		cli.setNome(rs.getString("cidade"));
-		cli.setNome(rs.getString("estado"));
-		cli.setNome(rs.getString("cep"));
-		cli.setNome(rs.getString("telefone"));
-		cli.setNome(rs.getString("celular"));
-		cli.setNome(rs.getString("email"));
-		cli.setNome(rs.getString("historico"));
-		cli.setNome(rs.getString("codStatus"));
+		cli.setRg(rs.getString("rg"));
+		cli.setCpf(rs.getString("cpf"));
+		cli.setEndereco(rs.getString("endereco"));
+		cli.setNumero(rs.getString("numero"));
+		cli.setComplemento(rs.getString("complemento"));
+		cli.setBairro(rs.getString("bairro"));
+		cli.setCidade(rs.getString("cidade"));
+		cli.setEstado(rs.getString("estado"));
+		cli.setCep(rs.getString("cep"));
+		cli.setTelefone(rs.getString("telefone"));
+		cli.setCelular(rs.getString("celular"));
+		cli.setEmail(rs.getString("email"));
+		cli.setHistorico(rs.getString("historico"));
 		return cli;
 	}
 
@@ -185,7 +184,7 @@ public class ClienteDaoJDBC implements Dao<Cliente> {
 		
 		try {
 			st = conn.prepareStatement(
-					"SELECT clientes.* " + 
+					"SELECT * " + 
 					"FROM clientes " +
 					"ORDER BY nome");
 			
@@ -194,7 +193,44 @@ public class ClienteDaoJDBC implements Dao<Cliente> {
 			List<Cliente> list = new ArrayList<>();
 			
 			while (rs.next()) {
-					
+				
+				Cliente cli = instantiateCliente(rs);
+				list.add(cli);
+		
+			}
+			
+			return list;
+			
+		} catch (SQLException e) {
+			throw new DbException(e.getMessage());
+		} finally {
+			DB.closeStatement(st);
+			DB.closeResultSet(rs);
+		}
+	}
+
+	@Override
+	public List<Cliente> findByName(String partial, Integer qtd) {
+		PreparedStatement st = null;
+		ResultSet rs = null;
+		
+		try {
+			st = conn.prepareStatement(
+					"SELECT * " + 
+					"FROM clientes " +
+					"WHERE nome like ? " +
+					"ORDER BY nome" + (qtd != null ? " LIMIT 0, ?" : "")
+					);
+			
+			st.setString(1, '%'+partial+'%');
+			if(qtd != null) { st.setInt(2, qtd); }
+			
+			rs = st.executeQuery();
+			
+			List<Cliente> list = new ArrayList<>();
+			
+			while (rs.next()) {
+				
 				Cliente cli = instantiateCliente(rs);
 				list.add(cli);
 		

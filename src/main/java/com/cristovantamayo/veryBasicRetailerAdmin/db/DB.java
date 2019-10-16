@@ -15,15 +15,14 @@ public class DB {
 
 	public static Connection getConnection() {
 		
-		Mysql mysql = new Mysql();
+		//Mysql mysql = new Mysql();
 		
-		if(conn == null && mysql.mountdb()) {
+		if(conn == null) { //&& mysql.mountdb()
 			try {
 				Properties props = loadProperties();
 				String url = props.getProperty("dburl");
-				conn = DriverManager.getConnection(url, props);
+				conn = DriverManager.getConnection(url+"?useTimezone=true&serverTimezone=UTC", props);
 			} catch(SQLException e) {
-				
 				
 				throw new DbException(e.getMessage());
 			}

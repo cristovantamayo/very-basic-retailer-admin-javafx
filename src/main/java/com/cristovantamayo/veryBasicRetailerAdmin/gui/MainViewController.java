@@ -8,9 +8,6 @@ import java.util.function.Consumer;
 import com.cristovantamayo.veryBasicRetailerAdmin.application.Main;
 import com.cristovantamayo.veryBasicRetailerAdmin.db.DB;
 import com.cristovantamayo.veryBasicRetailerAdmin.gui.enums.Menu;
-import com.cristovantamayo.veryBasicRetailerAdmin.gui.util.Alerts;
-//import com.cristovantamayo.veryBasicRetailerAdmin.model.services.DepartmentService;
-//import com.cristovantamayo.veryBasicRetailerAdmin.model.services.SellerService;
 
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -18,7 +15,6 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.MenuBar;
 import javafx.scene.control.MenuItem;
 import javafx.scene.control.ScrollPane;
@@ -45,53 +41,109 @@ public class MainViewController implements Initializable {
 	private MenuBar menu;
 	
 	
-	// Orçamentos
+	// SERVICOS /////////////////////////////////////
 	
 	@FXML
-	private MenuItem meunItemNovaOrdem;
+	private MenuItem menuItemNovaOS;
 	
-	public void onMenuItemNovaOrdem() {
-		loadView("tab", Menu.ORDEM_DE_SERICOS.getSigla(), "com/cristovantamayo/veryBasicRetailerAdmin/gui/NovaOrdem.fxml", x -> {});
+	public void onMenuItemNovaOS() {
+		loadView("tab", Menu.ORDEM_DE_SERICOS.getSigla(), "com/cristovantamayo/veryBasicRetailerAdmin/gui/OSNova.fxml", x -> {});
+	}
+	
+	@FXML
+	private MenuItem menuItemListarOS;
+
+	public void onMenuItemListarOS() {
+		loadView("tab", "", "com/cristovantamayo/veryBasicRetailerAdmin/gui/OSLista.fxml", x -> {});
 	}
 
-	public void onMenuItemListarOrdens() {
-		loadView("tab", "", "com/cristovantamayo/veryBasicRetailerAdmin/gui/ListarOrdens.fxml", x -> {});
+	@FXML
+	private MenuItem menuItemServicos;
+	
+	public void onMenuItemServicos() {
+		
 	}
 	
-	
-	
-	
+	// VENDAS /////////////////////////////////////////
 	
 	@FXML
-	private MenuItem menuItemSeller;
+	private MenuItem menuItemNOrc;
 	
-	@FXML
-	private MenuItem menuItemDepartment;
-	
-	@FXML
-	private MenuItem MenuItemAboud;
-	
-	
-	@FXML
-	public void onMenuItemSeller() {
-		/*loadView("scene", "", "/gui/SellerList.fxml", (SellerListController controller) -> {
-			controller.setSellerService(new SellerService());
-			controller.updateTableView();
-		});*/
+	public void onMenuItemNOrc() {
+		
 	}
 	
 	@FXML
-	public void onMenuItemDepartment() {
-		/*loadView("scene", "",  "/gui/DepartmentList.fxml", (DepartmentListController controller) -> {
-			controller.setDepartmentService(new DepartmentService());
-			controller.updateTableView();
-		});*/
+	private MenuItem menuItemOrcs;
+	
+	public void onMenuItemOrcs() {
+		
 	}
 	
 	@FXML
+	private MenuItem menuItemVendas;
+	
+	public void onMenuItemVendas() {
+		
+	}
+	
+	@FXML
+	private MenuItem menuItemProdutos;
+	
+	public void onMenuItemProdutos() {
+		
+	}
+	
+	// CLIENTES ////////////////////////////////////////
+	
+	@FXML
+	private MenuItem menuItemListCli;
+	
+	public void onMenuItemListCli() {
+		
+	}
+	
+	@FXML
+	private MenuItem menuItemNCli;
+	
+	public void onMenuItemNCli() {
+		
+	}
+	
+	// CAIXA //////////////////////////////////////////
+	
+	@FXML
+	private MenuItem menuItemCxDiario;
+	
+	public void onMenuItemCxDiario() {
+		
+	}
+	
+	@FXML
+	private MenuItem menuItemCxMensal;
+	
+	public void onMenuItemCxMensal() {
+		
+	}
+	
+	@FXML
+	private MenuItem menuItemAjustes;
+	
+	public void onMenuItemAjustes() {
+		
+	}
+	
+	// AJUDA /////////////////////////////////
+	
+	
+	@FXML
+	private MenuItem menuItemAboud;
+	
 	public void onMenuItemAbout() {
 		loadView("scene", "", "/gui/About.fxml", x -> {});
 	}
+	
+	////////////////////////////////////////////
 
 	@Override
 	public void initialize(URL uri, ResourceBundle rb) {
@@ -99,6 +151,8 @@ public class MainViewController implements Initializable {
 		vBox.prefWidthProperty().bind(groundPane.widthProperty());
 		tabPane.prefHeightProperty().bind(groundPane.heightProperty());
 		tabPane.setTabClosingPolicy(TabClosingPolicy.SELECTED_TAB);
+		
+		
 	}
 	
 	private synchronized <T> void loadView(String tipo, String title, String absolutePath, Consumer<T> initializingAction) {
@@ -142,7 +196,8 @@ public class MainViewController implements Initializable {
 			}
 			
 		} catch(IOException e) {
-			Alerts.showAlert("IO Exception", "Error loading view", e.getMessage(), AlertType.ERROR);
+			//Alerts.showAlert("IO Exception", "Error loading view", e.getMessage(), AlertType.ERROR);
+			e.printStackTrace();
 		}
 			
 	}
